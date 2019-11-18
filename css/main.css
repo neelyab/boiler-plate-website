@@ -16,7 +16,11 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -97,6 +101,129 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* -------- Base Header - Footer Styles -----*/
+header, 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
+
+
+}
+header nav {
+  width: 60%%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row-wrap;
+
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  padding: 0px 20px;
+  list-style: none;
+}
+
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*----------Mobile Styles - Homepage  -------- */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+/*------ Features ------*/
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+/*-------- reviews ------*/
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+/*----------Mobile Styles - About  -------- */
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*----------Mobile Styles - FAQ  -------- */
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
 
 /* ==========================================================================
    Helper classes
