@@ -116,11 +116,15 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-
-
+}
+header .content-wrapper p {
+  margin: 0;
+}
+header {
+  padding: 15px 0;
 }
 header nav {
-  width: 60%%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -129,6 +133,7 @@ header nav {
 }
 
 header nav ul {
+  width: 42%;
   display: flex;
   justify-content: space-around;
 }
@@ -137,8 +142,25 @@ nav ul li {
   padding: 0px 20px;
   list-style: none;
 }
+header .header-divider {
+  width: 100%;
+}
 
-
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+footer .contact {
+  text-align: center;
+}
+footer .copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .social h3 {
+  text-align: center;
+}
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -149,10 +171,8 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
-footer .copyright {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+footer p {
+  margin: 0;
 }
 
 
@@ -164,6 +184,9 @@ footer .copyright {
   flex-flow: row wrap;
 
 }
+.hero-area h1 {
+  padding: 50px 40px 20px 20px;
+}
 
 aside {
   display: flex;
@@ -171,6 +194,18 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 
+}
+aside .form-description {
+  padding: 20px 20px;
+}
+aside .form {
+  padding: 10px 20px;
+  width: 300px;
+}
+aside input {
+  width: 300px;
+  margin: 10px 0;
+  padding: 20px;
 }
 /*------ Features ------*/
 .features {
@@ -186,12 +221,30 @@ aside {
   flex-flow: row wrap;
 
 }
+.features article {
+  width: 55%;
+}
+.features h2 {
+  padding: 50px 20px;
+}
+.features p {
+  margin: 0;
+}
 /*-------- reviews ------*/
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 
+}.reviews h2 {
+  padding: 50px 20px;
+}
+.reviews h3 {
+  width: 51%;
+  padding: 20px 20px;
+}
+.reviews p {
+  padding: 0px 20px;
 }
 
 /*----------Mobile Styles - About  -------- */
