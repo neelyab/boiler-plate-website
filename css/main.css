@@ -200,10 +200,9 @@ aside .form-description {
 }
 aside .form {
   padding: 10px 20px;
-  width: 300px;
 }
 aside input {
-  width: 300px;
+
   margin: 10px 0;
   padding: 20px;
 }
@@ -223,6 +222,7 @@ aside input {
 }
 .features article {
   width: 55%;
+  padding: 10px 10px;
 }
 .features h2 {
   padding: 50px 20px;
@@ -253,6 +253,7 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 40px 20px;
 
 }
 .contact-section {
@@ -260,6 +261,7 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 40px 20px;
 }
 
 /*----------Mobile Styles - FAQ  -------- */
@@ -277,7 +279,9 @@ aside input {
   flex-flow: row wrap;
 
 }
-
+.faq {
+  padding: 40px 20px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -367,15 +371,123 @@ aside input {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet Styles Here */
+.content-wrapper {
+    max-width: 640px;
+  margin: 100px 0;
+}
+/* Header */
+header {
+  display:flex;
+  justify-content: center;
+}
+header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  width: 100%;
+}
+header nav {
+  width: 20%;
+}
+header nav ul {
+  justify-content: space-around;
+
+}
+.header-divider {
+  display: none;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* aside */
+aside .content-wrapper {
+  margin: 50px 0;
+}
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 50%;
+  margin: 0;
+
+}
+
+
+aside .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+}
+/* features */
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 275px;
+}
+.features .features-item-description {
+  width: 200px;
+}
+/* Reviews */
+.reviews article {
+  display: flex;
+  justify-content: center;
+}
+.reviews article div {
+  width: 50%;
+}
+/* footer */
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+footer .content-wrapper {
+  width: 67%
+  margin: 100px 0;
+}
+.footer-content {
+
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+footer .copyright {
+  width: 100%;
+}
+/* about */
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mission-content p {
+  width: 40%;
+}
+.contact-section .content-wrapper h2 {
+  width: 70%;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*FAQ */
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+.faq-content {
+  flex-basis: 40%;
+}
+.faq h2 {
+  width: 100%;
+}
+
+}
+@media only screen and (min-width: 1200px) {
+  /*Desktop Styles Here  */
 }
 
 /* ==========================================================================
