@@ -128,28 +128,32 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-size: 3.75em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: normal;
 }
  
 h2 {
  font-family: 'Poppins', sans-serif;
- font-size: 2.2em;
+ font-size: 1.9em;
+ font-weight: normal;
 }
  
 h3, 
 h4 {
  font-family: 'Poppins', sans-serif;
+ font-weight: normal;
 }
 h3 {
-  font-size: 1.8em;
+  font-size: 1.1em;
 }
 h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
  
 p {
   line-height: 1.5em;
-  font-size: 1.1em;
+  font-size: 1em;
 }
  
 img {
@@ -177,25 +181,36 @@ footer {
   flex-flow: row wrap;
 
 }
+header {
+  margin: 0;
+}
+header .content-wrapper {
+  background-color:#202322;
+  height: auto;
+}
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 100%;
+  margin: 0;
 }
 header .content-wrapper p {
   margin: 0;
 }
-header {
-  padding: 15px 0;
+header img {
+  padding-top: 20px;
+  padding-left: 0px;
 }
 header nav {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row-wrap;
+  margin: 0;
+  padding-right: 90px;
 
 }
 
@@ -206,7 +221,7 @@ header nav ul {
 }
 
 nav ul li {
-  padding: 0px 20px;
+  padding: 0px 20px 0px 50px;
   list-style: none;
 }
 header .header-divider {
@@ -214,19 +229,33 @@ header .header-divider {
 }
 
 footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
+  margin: 0px 0;
+  background-color: #202322;
+  width: 100%;
+
+}
+footer .footer-content {
+padding-bottom: 90px;
+display: flex;
+justify-content: center;
+flex-flow: row wrap;
+
 }
 footer .contact {
   text-align: center;
+  width: 100%;
 }
 footer .copyright {
-  width: 100%;
   display: flex;
   justify-content: center;
+   background-color: #202322;
+}
+footer .social {
+  width: 100%;
 }
 footer .social h3 {
   text-align: center;
+  width: 100%;
 }
 footer .social-icons {
   display: flex;
@@ -251,8 +280,17 @@ footer p {
   flex-flow: row wrap;
 
 }
+.hero-area .content-wrapper {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+}
 .hero-area h1 {
-  padding: 50px 40px 20px 20px;
+  width: 300px;
+  padding-left: 10px;
 }
 
 aside {
@@ -262,29 +300,70 @@ aside {
   flex-flow: row wrap;
 
 }
+aside .content-wrapper {
+  background-color: #527158;
+  width: 960px;
+}
 aside .form-description {
   padding: 20px 20px;
+  width: 300px;
+}
+.form-description h3 {
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 aside .form {
-  padding: 10px 20px;
+  padding:  0px 20px 20px 20px;
+  width: 300px;
+} 
+/*
+aside .form {
+  margin-top: 30px;
 }
+ */
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*
 aside input {
 
   margin: 10px 0;
   padding: 20px;
-}
+} */
 /*------ Features ------*/
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
+}
+.features .content-wrapper {
+   background-image: url('../img/features.jpg');
+   background-position: center;
+   margin: 0;
 }
 .features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 85px;
 
 }
 .features article {
@@ -296,6 +375,8 @@ aside input {
 }
 .features p {
   margin: 0;
+  font-size: .9em;
+  text-align: center;
 }
 /*-------- reviews ------*/
 .reviews {
@@ -303,15 +384,36 @@ aside input {
   justify-content: center;
   flex-flow: row wrap;
 
-}.reviews h2 {
-  padding: 50px 20px;
+}
+.reviews .content-wrapper {
+  background-color: #2a423a;
+  margin: 0;
+}
+.reviews h2 {
+  padding: 50px 20px 20px 20px;
+  margin: 0;
+  max-width: 500px;
 }
 .reviews h3 {
   width: 51%;
   padding: 20px 20px;
+  margin: 0;
 }
 .reviews p {
   padding: 0px 20px;
+  margin: 0;
+}
+#reviews {
+  width: 90%;
+  padding: 15px 15px;
+}
+
+.reviews article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-bottom: 90px;
 }
 
 /*----------Mobile Styles - About  -------- */
@@ -454,16 +556,29 @@ header .content-wrapper {
   justify-content: space-between;
   flex-flow: row;
   width: 100%;
+  height: 90px;
 }
 header nav {
   width: 20%;
 }
 header nav ul {
   justify-content: space-around;
+  font-size: 1em;
 
+}
+header img {
+  padding: 20px 0px 20px 50px;
 }
 .header-divider {
   display: none;
+}
+/* hero area */
+.hero-area h1 {
+  width: 530px;
+  padding-left: 50px;
+  padding-top: 90px;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 /* aside */
@@ -482,6 +597,7 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row;
+  margin: 0;
 }
 /* features */
 .features article {
@@ -494,6 +610,7 @@ aside .content-wrapper {
 .features .features-item-description {
   width: 200px;
 }
+
 /* Reviews */
 .reviews article {
   display: flex;
@@ -501,6 +618,10 @@ aside .content-wrapper {
 }
 .reviews article div {
   width: 50%;
+}
+.reviews .content-wrapper {
+  background-color: #2a423a;
+  width: 960px;
 }
 /* footer */
 footer .footer-content {
@@ -515,9 +636,13 @@ footer .content-wrapper {
 .footer-content {
 
 }
+footer .social {
+  width: 50%;
+}
 
 footer .contact {
   margin-bottom: 0;
+  width: 50%;
 }
 footer .copyright {
   width: 100%;
@@ -553,6 +678,7 @@ footer .copyright {
 }
 
 }
+
 @media only screen and (min-width: 1200px) {
   /*Desktop Styles Here  */
   .content-wrapper {
@@ -563,7 +689,7 @@ footer .copyright {
     width: 80%;
   }
   .hero-area h1 {
-    width: 670px;
+    width: 720px;
     text-align: left;
   }
   /* aside */
@@ -582,7 +708,7 @@ footer .copyright {
   width: 860px;
 }
 .features article {
-  flex-basis: 200px;
+ width: 250px;
 }
 /* reviews */
 .reviews article div {
@@ -590,15 +716,15 @@ footer .copyright {
 }
   /* footer */
   footer .content-wrapper {
-  width: 74%
+  width: 74%;
 }
 /* Contact */
- .mission h2,
-  .contact-section .content-wrapper h2 {
+.mission h2,
+.contact-section .content-wrapper h2 {
       width: 900px
     }
  
-  .contact-section .content-wrapper h2 {
+.contact-section .content-wrapper h2 {
     margin-bottom: 40px;
     }
  /* FAQ */
