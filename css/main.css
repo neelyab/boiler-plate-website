@@ -170,7 +170,7 @@ address {
 }
  
 .content-wrapper {
- 
+ width: 90%;
 }
 /* -------- Base Header - Footer Styles -----*/
 header, 
@@ -184,7 +184,7 @@ footer {
 header {
   margin: 0;
 }
-header .content-wrapper {
+header {
   background-color:#202322;
   height: auto;
 }
@@ -230,9 +230,12 @@ header .header-divider {
 
 footer .content-wrapper {
   margin: 0px 0;
-  background-color: #202322;
+
   width: 100%;
 
+}
+footer {
+    background-color: #202322;
 }
 footer .footer-content {
 padding-bottom: 90px;
@@ -248,7 +251,7 @@ footer .contact {
 footer .copyright {
   display: flex;
   justify-content: center;
-   background-color: #202322;
+  background-color: #202322;
 }
 footer .social {
   width: 100%;
@@ -280,7 +283,7 @@ footer p {
   flex-flow: row wrap;
 
 }
-.hero-area .content-wrapper {
+.hero-area {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
@@ -298,10 +301,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 
 }
 aside .content-wrapper {
-  background-color: #527158;
+
   width: 960px;
 }
 aside .form-description {
@@ -352,12 +356,11 @@ aside input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-.features .content-wrapper {
-   background-image: url('../img/features.jpg');
+  background-image: url('../img/features.jpg');
    background-position: center;
    margin: 0;
 }
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -383,10 +386,10 @@ aside input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 
 }
 .reviews .content-wrapper {
-  background-color: #2a423a;
   margin: 0;
 }
 .reviews h2 {
@@ -423,11 +426,8 @@ aside input {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  background-color: #527158;
 
-}
-.mission .content-wrapper {
-    background-color: #527158;
-    margin: 0;
 }
 .contact-section {
   display: flex;
@@ -436,8 +436,20 @@ aside input {
   flex-flow: row wrap;
   margin: 0;
 }
-.map {
-  margin: 0;
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 80%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 .content-wrapper h2 {
   margin: 50px 50px;
@@ -448,7 +460,7 @@ aside input {
 .contact-content p, h2 {
   text-align: center;
 }
-.contact-section .content-wrapper {
+.contact-section {
   background-color: #2a423a;
   margin: 0;
 }
@@ -460,8 +472,7 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
-  padding: 0;
+  background-color: #527158;
 
 }
 .faq .content-wrapper {
@@ -469,20 +480,20 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
-  margin: 0;
-  width: 100%;
+  margin: 50px 0 0 0;
 }
-.faq .content-wrapper .faq-content {
-  margin: 40px 30px;
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
 }
-.faq .content-wrapper h2 {
-  width: 100%;
-  text-align: center;
+
+.faq-content {
+  margin-bottom: 50px;
 }
-.faq .content-wrapper .faq-content p, h4 {
-  margin: 0;
-  text-align: left;
+
+.faq-content h4 {
+  line-height: 1.333;
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -791,7 +802,7 @@ footer .copyright {
   justify-content: space-between;
 }
 .faq-content {
-  flex-basis: 40%;
+  flex-basis: 35%;
 }
 .faq h2 {
   width: 100%;
