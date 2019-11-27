@@ -422,23 +422,46 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 40px 20px;
+  margin: 0;
 
+}
+.mission .content-wrapper {
+    background-color: #527158;
+    margin: 0;
 }
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 40px 20px;
+  margin: 0;
+}
+.map {
+  margin: 0;
+}
+.content-wrapper h2 {
+  margin: 50px 50px;
+}
+.mission-content {
+  margin: 20px 50px;
+}
+.contact-content p, h2 {
+  text-align: center;
+}
+.contact-section .content-wrapper {
+  background-color: #2a423a;
+  margin: 0;
 }
 
 /*----------Mobile Styles - FAQ  -------- */
+
 .faq {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
 
 }
 .faq .content-wrapper {
@@ -446,11 +469,21 @@ aside input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  margin: 0;
+  width: 100%;
+}
+.faq .content-wrapper .faq-content {
+  margin: 40px 30px;
+}
+.faq .content-wrapper h2 {
+  width: 100%;
+  text-align: center;
+}
+.faq .content-wrapper .faq-content p, h4 {
+  margin: 0;
+}
 
-}
-.faq {
-  padding: 40px 20px;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -589,10 +622,7 @@ aside .content-wrapper .form-description,
 aside .content-wrapper .form {
   width: 50%;
   margin: 0;
-
 }
-
-
 aside .content-wrapper {
   display: flex;
   justify-content: center;
@@ -656,13 +686,16 @@ footer .copyright {
 .mission-content p {
   width: 40%;
 }
-.contact-section .content-wrapper h2 {
-  width: 70%;
+.contact-section .content-wrapper h2, p {
+  width: 80%;
+  text-align: center;
+  justify-content: flex-start;
 }
 .contact-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
 }
 
 /*FAQ */
