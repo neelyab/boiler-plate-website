@@ -482,6 +482,7 @@ aside input {
 }
 .faq .content-wrapper .faq-content p, h4 {
   margin: 0;
+  text-align: left;
 }
 
 /* ==========================================================================
@@ -754,19 +755,48 @@ footer .copyright {
 /* Contact */
 .mission h2,
 .contact-section .content-wrapper h2 {
-      width: 900px
+    
     }
  
 .contact-section .content-wrapper h2 {
     margin-bottom: 40px;
     }
- /* FAQ */
- .faq h2 {
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mission-content p {
+  width: 40%;
+}
+.contact-section .content-wrapper h2, p {
+  width: 80%;
+  text-align: center;
+  justify-content: flex-start;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+.contact-section .content-wrapper {
   width: 100%;
- }
- .faq-content {
-  flex-basis: 430px;
- }
+}
+ /* FAQ */
+ 
+ 
+ .faq .content-wrapper {
+  justify-content: space-between;
+}
+.faq-content {
+  flex-basis: 40%;
+}
+.faq h2 {
+  width: 100%;
+}
+
 }
 
 /* ==========================================================================
