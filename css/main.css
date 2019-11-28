@@ -270,6 +270,10 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
+footer .social-icons i {
+  font-size: 2em;
+  
+}
 footer p {
   margin: 0;
 }
