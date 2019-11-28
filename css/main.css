@@ -440,6 +440,7 @@ aside input {
   width: 100%;
   height: 0; 
   padding-bottom: 80%; 
+  margin: 0;
   overflow: hidden;
   position: relative;
 }
@@ -665,6 +666,12 @@ aside .content-wrapper {
   background-color: #2a423a;
   width: 960px;
 }
+/* map */
+.map figure {
+  padding-bottom: 46%; 
+
+}
+
 /* footer */
 footer .footer-content {
   display: flex;
@@ -759,6 +766,12 @@ footer .copyright {
 .reviews article div {
   width: 450px;
 }
+/* map */
+.map figure {
+  padding-bottom: 38%; 
+
+}
+
   /* footer */
   footer .content-wrapper {
   width: 74%;
